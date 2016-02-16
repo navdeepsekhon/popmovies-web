@@ -1,6 +1,6 @@
 # popmovies-web
 
-<a target="_blank" href="http://popmovies.azurewebsites.net/">LIVE DEMO]</a>
+<a target="_blank" href="http://popmovies.azurewebsites.net/">LIVE DEMO</a>
 
 Starter project using nodejs expressjs and angular 2. This is the web implementaion my [PopMovies android app](https://github.com/navdeepsekhon/PopMovies). It uses the themoviedb.org api to get the movie data.
 
