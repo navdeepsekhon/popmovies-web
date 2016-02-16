@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "sourceMap": true
+  },
+  "files": [
+    "typings/main.d.ts",
+    "src/client.ts",
+    "src/server.ts"
+  ]
+}

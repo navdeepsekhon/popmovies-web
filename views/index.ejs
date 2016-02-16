@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PopMovies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset=utf-8>
+  <meta name="description"
+        content="Web application for discovering popular movies. Developed with nodejs expressjs and angular 2. Developed by Navdeep Sekhon">
+  <meta name=mobile-web-app-capable content=yes>
+  <meta name=apple-mobile-web-app-capable content=yes>
+
+  <!-- 1. Load libraries -->
+  <!-- IE required polyfills, in this exact order -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+
+  <script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
+  <script src="https://code.angularjs.org/tools/system.js"></script>
+  <script src="https://code.angularjs.org/tools/typescript.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.6/Rx.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.6/angular2.dev.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-beta.6/http.dev.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <!-- 2. Configure SystemJS -->
+  <script>
+    System.config({
+      transpiler: 'typescript',
+      typescriptOptions: {emitDecoratorMetadata: true},
+      packages: {'js': {defaultExtension: 'ts'}}
+    });
+    System.import('js/bootstrap')
+            .then(null, console.error.bind(console));
+  </script>
+
+
+</head>
+
+<!-- 3. Display the application -->
+<body>
+<nav class="fixed-nav-bar text-center">
+  <h2 id="name" class="text-thin text-name">PopMovies</h2>
+  <!--<div id="title" class="">By Navdeep Sekhon</div>-->
+</nav>
+
+<div id="main" class="container">
+  <pop-movies>Loading...</pop-movies>
+</div>
+
+<footer class="text-center">
+  <p><a href="http://navdeepsekhon.com">Developed by Navdeep Sekhon</a></p>
+</footer>
+<!-- Saving on some load time by putting these here -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
